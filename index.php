@@ -9,7 +9,7 @@
           <h1>Specialists in high quality Japanese Koi Carp - I changed this.</h1>
         </header>
         <section>
-          <p>We love fish!</p>
+          <h2>We love fish!</h2>
           <img src="https://resize.hswstatic.com/w_907/gif/koi.jpg" alt="Koi carp" />
           <p class="message">Our range of Japanese Koi is constantly expanding<br>check back soon for the launch of our online shop!</p>
           <hr>
