@@ -6,7 +6,7 @@
       <article class="westmidlandskoi-wrap">
         <header>
           <img class="logo" src="library/images/westmidlandskoi.png" alt="west midlands koi logo">
-          <h1>Specialists in high quality Japanese Koi Carp</h1>
+          <h1>Specialists in high quality Japanese Koi Carp - I changed this.</h1>
         </header>
         <section>
           <p class="message">Our range of Japanese Koi is constantly expanding<br>check back soon for the launch of our online shop!</p>
