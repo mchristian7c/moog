@@ -1,0 +1,28 @@
+@function white($opacity) {
+    @return rgba(255,255,255,$opacity);
+}
+
+
+$alfa: 'Roboto Condensed', sans-serif;
+$beta: 'Roboto', sans-serif;
+
+$fou: 400;
+$sev: 700;
+
+@mixin scale($size) {
+  -webkit-transform: scale($size);
+      -ms-transform: scale($size);
+          transform: scale($size);
+}
+
+@mixin transition($ms) {
+  -webkit-transition: all $ms ease-in;
+  -ms-transition: all $ms ease-in;
+  -moz-transition: all $ms ease-in;
+  transition: all $ms ease-in;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}

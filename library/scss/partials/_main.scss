@@ -1,0 +1,240 @@
+p {
+  font-family: $beta;
+  color: white(1);
+  margin: 0;
+  &::selection, &::-moz-selection {
+    background-color: #E40428;
+  }
+}
+h1,h2,h4,h5,h6 {
+  font-family: $alfa;
+  color: white(1);
+  margin: 0;
+  &::selection, &::-moz-selection {
+    background-color: #E40428;
+  }
+
+}
+h3 {
+  font-weight: $fou;
+  font-family: $beta;
+  color: white(1);
+  margin: 0;
+  &::selection, &::-moz-selection {
+    background-color: #E40428;
+  }
+
+  a {
+    font-family: $beta;
+  }
+}
+
+body {
+  background-image: url('../images/fish.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  height: auto;
+}
+.fish {
+  display: table;
+  height: calc(100vh - 97px);
+  width: 100%;
+}
+.westmidlandskoi-wrap {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  section, header {
+    max-width: 833px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 34px;
+    line-height: 50px;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1.75px;
+  }
+  hr {
+    width: 32px;
+    height: 8px;
+    border: none;
+    background-color: #E40428;
+    margin: 30px auto 30px auto;
+    @include border-radius(2px);
+  }
+  h3 {
+    font-size: 22px;
+    line-height: 37px;
+    font-weight: $fou;
+    &::selection, &::-moz-selection {
+      background-color: #E40428;
+    }
+
+    span {
+      margin: 0 20px;
+      &::selection, &::-moz-selection {
+        background-color: #E40428;
+      }
+
+    }
+    a {
+      text-decoration: none;
+      &::selection, &::-moz-selection {
+        background-color: #E40428;
+      }
+
+      &:link {
+        color: white(1);
+      }
+      &:visited {
+        color: white(1);
+      }
+      &:hover {
+        color: white(1);
+        text-decoration: none;
+      }
+      &:focus {
+        color: white(1);
+        text-decoration: none;
+        outline: 1px dotted rgba(255,255,255,.2);
+      }
+    }
+  }
+}
+
+img.logo {
+  height: auto;
+  width: 345px;
+  margin: 0 auto 79px auto;
+  &::selection, &::-moz-selection {
+    background-color: #E40428;
+  }
+
+}
+p {
+  &.message {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  &.address {
+    font-size: 20px;
+    line-height: 37px;
+    margin: 0 0 20px 0;
+  }
+}
+ul {
+  font-size: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+    font-size: 22px;
+    margin: 0 5px;
+    a {
+      display: block;
+      text-align: center;
+      height: 40px;
+      width: 40px;
+      line-height: 45px;
+      background-color: #E40428;
+      margin: 0;
+      @include border-radius(2px);
+      &:link {
+        color: white(1);
+      }
+      &:visited {
+        color: white(1);
+      }
+      &:hover {
+        color: white(1);
+        text-decoration: none;
+      }
+      &:focus {
+        color: white(1);
+        text-decoration: none;
+        outline: 1px dotted #E40428;
+      }
+      &::selection, &::-moz-selection {
+        background-color: #E40428;
+      }
+
+    }
+  }
+}
+
+footer {
+  background-image: url('../images/westmidlandskoi-footer-bg.jpg');
+  background-size: auto 106px;
+  background-repeat: repeat;
+  text-align: center;
+  p {
+    font-size: 22px;
+    line-height: 37px;
+    margin: 0;
+    padding: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+.mobi {
+  display: none;
+}
+
+} // end of media query
+
+@media only screen and (max-width: 1024px) {
+
+
+
+  .westmidlandskoi-wrap {
+    width: auto;
+    padding: 60px 30px 0 30px;
+    display: block;
+    ul {
+      padding: 0 0 30px 0;
+    }
+    img {
+      width: 80%;
+      height: auto;
+      max-width: 394px;
+    }
+  }
+  footer {
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    // width: 100%;
+  }
+
+} // end of media query
+
+@media only screen and (max-width: 768px) {
+
+.desk {
+  display: none;
+}
+h3.mobi {
+  display: block;
+  font-size: 22px;
+  a {
+    display: block;
+  }
+}
+
+
+  body {
+    background-image: url('../images/fin.jpg');
+  }
+
+} // end of media query
+
+@media only screen and (max-width: 480px) {
+
+  body {
+    background-image: url('../images/fin.jpg');
+  }
+
+} // end of media query
